@@ -4,10 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasks:</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Alata", serif;
+        }
+        body {display: flex;
+            flex-direction: column;
+            background-color: #1b1b1c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #005ff9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #42424e;
+            color: #005ff9;
+            font-weight: 500;
+            transition: 0.5s;
+        }
+        p{
+            font-size: 150px;
+            margin-bottom: 10px;
+            font-family: "Alata", serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+    </style>
 </head>
 <body>
+    <p>Enter a Task</p>
     <form action="/add-task" method="POST">
-        <input type="text" name="input" placeholder="Enter task" required>
+        <input type="text" name="input" placeholder="     Automatically Numbered" required>
         <button type="submit">Add Task</button>
     </form>
 </body>

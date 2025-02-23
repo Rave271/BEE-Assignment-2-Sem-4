@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Alata", serif;
+        }
+        body {display: flex;
+            flex-direction: column;
+            background-color: #1b1b1c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        p{
+            font-size: 150px;
+            margin-bottom: 10px;
+            font-family: "Alata", serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+        .tasks-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .task-card {
+            height: 500px;
+            width: 500px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            background: #f9f9f9;
+            text-align: center;
+            overflow-y: auto;
+        }
+        .task-card h3 {
+            font-size: 100px;
+            margin-top: 0;
+            color: #3523ab;
+        }
+        .task-card p {
+            font-size: 75px;
+            color: #333;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>Task:</p>
+    <div class="tasks-container">
+          
+            <div class="task-card">
+                <h3><%= id %></h3>
+                <p><%= task %></p>
+            </div>
+         
+    </div>
+</body>
+</html>
