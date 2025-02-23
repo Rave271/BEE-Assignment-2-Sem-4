@@ -1,0 +1,27 @@
+{
+  "name": "assignment-2",
+  "version": "1.0.0",
+  "description": "BEE Assignment 2 , 4th Sem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rave271/BEE-Assignment-2-Sem-4.git"
+  },
+  "keywords": [
+    "Figma",
+    "Backend"
+  ],
+  "author": "Raghav 2187",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rave271/BEE-Assignment-2-Sem-4/issues"
+  },
+  "homepage": "https://github.com/Rave271/BEE-Assignment-2-Sem-4#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}
